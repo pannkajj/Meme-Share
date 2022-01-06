@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#000000"
+        android:background="#ffffff"
         app:layout_constraintBottom_toTopOf="@id/shareButton"/>
 
     <ProgressBar
@@ -33,29 +33,29 @@
         app:layout_constraintRight_toRightOf="@id/memeImageView"
         android:id="@+id/progressbar"/>
 
-    <Button
-        android:layout_width="0dp"
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/shareButton"
-        android:drawableLeft="@drawable/ic_baseline_share_24"
-        android:padding="32dp"
-        android:background="#0000ff"
+        app:icon="@drawable/ic_baseline_share_24"
+        android:layout_margin="16dp"
         android:onClick="shareMeme"/>
-    <Button
-        android:layout_width="0dp"
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/nextButton"
-        android:padding="32dp"
-        android:drawableLeft="@drawable/ic_baseline_navigate_next_24"
-        android:background="#ff5500"
+        android:layout_margin="16dp"
+        app:icon="@drawable/ic_baseline_navigate_next_24"
         android:onClick="nextMeme"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
